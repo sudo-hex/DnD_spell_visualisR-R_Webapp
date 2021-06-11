@@ -58,14 +58,12 @@ shinyUI(fluidPage(
       tabItems(
         
         tabItem(tabName = "home",
-          
           # home section
           includeMarkdown("www/home.md")
           
         ),
         
         tabItem(tabName = "tree", 
-                
           # collapsible spell tree section
           includeMarkdown("www/tree.md"),
           column(3, uiOutput("SelectClass")),
@@ -73,14 +71,25 @@ shinyUI(fluidPage(
                 
         ),
         
-        tabItem(
+        tabItem(tabName = "comparator",
           # spell data comparator
-          tabName = "comparator"
+          fluidRow(
+            column(2, uiOutput("SelectClass1")),
+            column(2, uiOutput("SelectLevel1")),
+            column(2, uiOutput("SelectSpell1")),
+            column(2, uiOutput("SelectClass2")),
+            column(2, uiOutput("SelectLevel2")),
+            column(2, uiOutput("SelectSpell2")),
+          ),
+          fluidRow(
+            column(6,tableOutput("selection1")),
+            column(6,tableOutput("selection2"))
+          )
         ),
         
-        tabItem(
+        tabItem(tabName = "extractor",
           # spell data extractor
-          tabName = "extractor", dataTableOutput("spellsDataTable") %>% withSpinner(color = "red")
+          DT::dataTableOutput("spellsDataTable") %>% withSpinner(color = "red")
           
         )
         
