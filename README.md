@@ -48,7 +48,7 @@ La vidéo sur la page d'acceuil peut être visionnée originalement sur *Youtube
 
 ### Traitement
 
-Concernant le traitement, la base de donnée est premièrement réduite au dimensions utiles tels que : le nom du sort, sa description, son temps de lancement, sa classe, sa durée, son niveau et son type (école de magie). On extrait ensuite l'information des différentes classes dans de nouvelles colonnes (détection de virgule dans la colonnes et isolation des mots-clés). On ajoute ensuite la catégorie 'all' pour les sorts qui sont disponibles à toutes les classes. Le traitement est finalement fini par une renomination des niveaux de scores : par exemple le niveau de 0 devient 'cantrip' pour mieux refléter les règles du livre.
+Concernant le traitement, la base de donnée est premièrement réduite au dimensions utiles tels que : le nom du sort, sa description, son temps de lancement, sa classe, sa durée, son niveau et son type (école de magie). On extrait ensuite l'information des différentes classes dans de nouvelles colonnes (détection de virgule dans la colonnes et isolation des mots-clés). On ajoute ensuite la catégorie *"all"* pour les sorts qui sont disponibles à toutes les classes. Le traitement est finalement fini par une renomination des niveaux de scores : par exemple le niveau de 0 devient *"cantrip"* pour mieux refléter les règles du livre.
 
 Aucun autre traitement est nécessaire, le reste se déroule lors de l'exécution (cf. fichier server.R)
 
