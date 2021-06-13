@@ -140,7 +140,8 @@ shinyServer(function(input, output) {
  ###EXTRACTOR SERVER###
  # DT table
  output$spellsDataTable <- DT::renderDataTable(
-   spells_tidy,
+   spells_tidy %>% 
+     select("name","description","Casting Time","Duration","Level","School","classe1","classe2","classe3","classe4","classe5","classe6","classe7"),
    extensions=c("Buttons","FixedHeader"),
    filter = "top",
    rownames = F,
