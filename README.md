@@ -7,32 +7,32 @@ Ce projet a été réalisé dans le cadre du cours : *Visualisation de données*
 
 ## Description 
 
-**DnD SpellBook** est une application web qui vous permet de visualiser les différents sorts disponibles pour le célèbre jeu de rôle *Dungeons and Dragons* à l'aide de différents outils.
+**DnD SpellBook** est une application web qui vous permet de visualiser l'ensemble des sorts officiellement disponibles pour le célèbre jeu de rôle *Dungeons and Dragons* à l'aide de différents outils.
 
 ![image](https://user-images.githubusercontent.com/82593320/121702389-1fc6d780-cad2-11eb-957a-22427c424066.png)
 
 ### Spell Tree
 
-Cet outil vous permet d'obtenir une visualisation en arbre des différents sorts disponibles en partant de la classe qui vous intéresse, puis du niveau de du sort pour terminer sur le type de sort (école de magie). Il est possible de passer librement et facilement d'une classe à l'autre ou même d'ouvrir plusieurs *branches* à la fois pour avoir une représentation claire et complète des sorts disponibles par niveau et par type de sort. 
+Cet outil vous permet d'obtenir une visualisation en arbre des différents sorts disponibles en partant de la classe qui vous intéresse, puis du niveau de du sort pour terminer sur le type de sort (école de magie). Il est possible de passer librement et facilement d'une classe à l'autre, ou même d'ouvrir plusieurs *branches* à la fois pour avoir une représentation claire et complète des sorts disponibles par niveau et par type de sort. 
 
 ![image](https://user-images.githubusercontent.com/82593320/121705378-dc219d00-cad4-11eb-8229-a90160b58b66.png)
 *Ci-dessus un abre montrant les sorts disponibles de la classe du "Warlock" du niveau 1, de l'école de magie de la "divination" et ceux du niveau 6, de l'école de magie de la "necromancie"*
 
 ### Spell Comparator 
 
-Cet outil vous permet de comparer deux sorts (une description des sorts est alors affichée) l'un avec l'autre en utilisant les différents boutons en haut de l'outil relatifs à la classe recherchée, du niveau du sort et du sort visé. En jeu, le nombre de sorts apprenable par niveaux étant limités, cet outil peut s'avérer très utile en cas d'hésitation entre deux sorts particuliers pour réussir à faire le choix le plus optimisé (l'outil montrant également quelle autre classe peut apprendre le sort visé).
+Cet outil vous permet de comparer deux sorts (une description des sorts est alors affichée) l'un avec l'autre en utilisant les différents boutons en haut de l'outil relatifs à la classe recherchée, du niveau du sort et du sort visé. Suivant les règles officielles, le nombre de sorts qu'un personnage peut apprendre par niveau est limité. Cet outil peut donc s'avérer très utile en cas d'hésitation entre deux sorts particuliers pour réussir à faire le choix le plus optimisé (l'outil montrant également quelle autre classe peut apprendre le sort visé).
 
 ![image](https://user-images.githubusercontent.com/82593320/121791208-aa4d2b00-cbe7-11eb-854a-d4c17cd4beb3.png)
 *Ci-dessus la comparaison entre deux sort dits "de contrôle" (ayant le même but) avec une liste des autres classes pouvant apprendre l'un ou l'autre sort*
 
 ### Spell Extractor 
 
-Finalement le dernier outil vous permet de rechercher précisement un sort en particulier (une description du sort est alors affichée) sur la base de son temps d'incantation, de sa classe, de sa durée, de son niveau d'acquisition ou encore de type (école de magie). 
+Finalement le dernier outil vous permet de rechercher précisement un sort en particulier (une description du sort est alors affichée) sur la base de son temps d'incantation, de sa classe, de sa durée, de son niveau d'acquisition ou encore de son type (école de magie). 
 
 ![image](https://user-images.githubusercontent.com/82593320/121752473-794df700-cb10-11eb-8c5c-09e47124402c.png)
-*Ci-dessus le résultat d'une recherche en spécifiant tout les sorts contenant le mot "beam" qui sont lancés de manière instantanée et de l'école de magie de l'"Evocation"*
+*Ci-dessus le résultat d'une recherche en spécifiant tous les sorts contenant le mot "beam", qui sont lancés de manière instantanée et de l'école de magie de l'"Evocation"*
 
-De plus, le bouton *Select columns* vous donne la possiblité d'afficher uniquement certains détails d'un sort pour épurer votre recherche (de même que le bouton *Show entries* vous permet d'épurer encore davantage le nombre de résultats obtenus).
+De plus, le bouton *Select columns* vous donne la possiblité d'afficher uniquement certains détails d'un sort afin d'épurer votre recherche (de même que le bouton *Show entries* vous permet d'épurer encore davantage le nombre de résultats obtenus).
 
 Il est également possible à l'aide des autres boutons: *CSV, Excel, PDF* d'exporter la liste des sorts sous ces différents formats à votre convenance. 
 
