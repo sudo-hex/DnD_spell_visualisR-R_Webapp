@@ -48,4 +48,11 @@ La vidéo sur la page d'acceuil peut être visionnée originalement sur *Youtube
 
 ### Traitement
 
+La base de donnée est en premier réduite au dimensions utiles : name, description, Casting Time, Classes, Duration, Level, School.
+On extrait ensuite l'information des différentes classes dans de nouvelles colonnes (détection de virgule dans la colonnes et isolation des mots clés).
+On ajoute aussi la catégorie 'all' pour les sorts qui sont disponibles à toutes les classes.
+Le traitement est fini par une renomination des niveaux de scores : par exemple le niveau de 0 devient 'cantrip' pour mieux refleter les règles du livre.
 
+Aucuns autres traitement est nécessaire, le reste se déroule lors de l'exécution (cf. fichier server.R)
+
+### Merci !
