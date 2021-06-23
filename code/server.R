@@ -13,7 +13,7 @@ library(DT)
 #####################
 # SUPPORT FUNCTIONS #
 #####################
-
+stat_tree <- T
 
 ######################
 # DATA preprocessing #
@@ -52,6 +52,11 @@ shinyServer(function(input, output) {
                             filter(classe1==input$selectedClass|classe2==input$selectedClass|classe3==input$selectedClass|classe3==input$selectedClass|
                                      classe4==input$selectedClass|classe5==input$selectedClass|classe6==input$selectedClass|classe7==input$selectedClass)
                 )
+  #check for button flip
+  # observeEvent(input$flipButton ,{
+  #   stat_tree <- !stat_tree
+  #   print(stat_tree)
+  # })
   # collapsible tree
   output$tree <- renderCollapsibleTree(
     collapsibleTree(
@@ -61,7 +66,8 @@ shinyServer(function(input, output) {
       root = input$selectedClass,
       hierarchy = c("Level", "School","name"),
       fill = "Red",
-      zoomable = FALSE
+      zoomable = FALSE,
+      collapsed = F
     )
   )
 
@@ -151,9 +157,9 @@ shinyServer(function(input, output) {
      autoWidth = T,
      scrollx = F,
      dom ='Blrtip',
-     buttons = list(list(extend = 'csv', exportOptions = list(columns = ':visible')),
-                    list(extend = 'excel', exportOptions = list(columns = ':visible')),
-                    list(extend = 'pdf', exportOptions = list(columns = ':visible')),
+     buttons = list(list(extend = 'csv', exportOptions = list(columns = ':visible'), filename='DnD_Export_csv'),
+                    list(extend = 'excel', exportOptions = list(columns = ':visible'), filename='DnD_Export_xlsx'),
+                    list(extend = 'pdf', exportOptions = list(columns = ':visible'), filename='DnD_Export_pdf', orientation='landscape', pageSize ='A2'),
                     list(extend = 'colvis', text = "Select columns")
      ),
      fixedHeader = T

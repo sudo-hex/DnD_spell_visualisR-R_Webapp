@@ -10,6 +10,7 @@ library(collapsibleTree)
 library(shinycssloaders)
 library(DT)
 library(tigris)
+library(shinyjs)
 
 ###########
 # LOAD UI #
@@ -66,8 +67,9 @@ shinyUI(fluidPage(
         tabItem(tabName = "tree", 
           # collapsible spell tree section
           includeMarkdown("www/tree.md"),
-          column(3, uiOutput("SelectClass")),
-          collapsibleTreeOutput('tree', height='700px') %>% withSpinner(color = "red")
+          column(3, uiOutput("SelectClass")), #actionButton('flipButton', "Expand or Collapse Tree")),
+          collapsibleTreeOutput('tree', height='1000px') %>% withSpinner(color = "red")
+          
                 
         ),
         
