@@ -155,7 +155,7 @@ shinyServer(function(input, output) {
      pageLength = 25,
      lengthMenu = c(5,10,15,20,25,50,100),
      autoWidth = T,
-     scrollx = F,
+     scrollX = T,
      dom ='Blrtip',
      buttons = list(list(extend = 'csv', exportOptions = list(columns = ':visible'), filename='DnD_Export_csv'),
                     list(extend = 'excel', exportOptions = list(columns = ':visible'), filename='DnD_Export_xlsx'),
