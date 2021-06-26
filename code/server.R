@@ -65,9 +65,10 @@ shinyServer(function(input, output) {
       #attribute = "description",
       root = input$selectedClass,
       hierarchy = c("Level", "School","name"),
-      fill = "Red",
-      zoomable = FALSE,
-      collapsed = F
+      fill = "Colour",
+      zoomable = TRUE,
+      nodeSize = "leafCount",
+      collapsed = FALSE
     )
   )
 
