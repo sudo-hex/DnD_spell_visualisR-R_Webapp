@@ -15,7 +15,7 @@ Ce projet a été réalisé dans le cadre du cours : *Visualisation de données*
 
 Cet outil vous permet d'obtenir une visualisation en arbre des différents sorts disponibles en partant de la classe qui vous intéresse, puis du niveau de du sort pour terminer sur le type de sort (école de magie). Il est possible de passer librement et facilement d'une classe à l'autre, ou même d'ouvrir plusieurs *branches* à la fois pour avoir une représentation claire et complète des sorts disponibles par niveau et par type de sort. 
 
-![image](https://user-images.githubusercontent.com/82593320/121705378-dc219d00-cad4-11eb-8229-a90160b58b66.png)
+![image](https://user-images.githubusercontent.com/82309920/123537863-03fa3d00-d732-11eb-8e8e-160596a2d0ec.png)
 *Ci-dessus un abre montrant les sorts disponibles de la classe du "Warlock" du niveau 1, de l'école de magie de la "divination" et ceux du niveau 6, de l'école de magie de la "necromancie"*
 
 ### Spell Comparator 
