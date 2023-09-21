@@ -2,8 +2,6 @@
 
 *DnD SpellBook* est disponible en ligne [ici](https://wiwerod.shinyapps.io/DnDSpellbook/)
 
-Ce projet a été réalisé dans le cadre du cours : *Visualisation de données* du Professeur Isaac Pante donné dans le cursus du Master DCS par Ryan Davies, Quentin Jacquemin et Adrien Lanvin. 
-
 
 ## Description 
 
